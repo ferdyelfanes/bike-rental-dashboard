@@ -12,7 +12,7 @@ sns.set_theme(style="darkgrid")
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("all_data.csv", parse_dates=["dteday"])
+    df = pd.read_csv("Dashboard/all_data.csv", parse_dates=["dteday"])
     df["hour"] = df["hr"]
     return df
 
